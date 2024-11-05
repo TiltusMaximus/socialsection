@@ -11,7 +11,86 @@
     --DarkGrayishMagenta: hsl(303, 10%, 53%);
     --LightGrayishMagenta: hsl(300, 24%, 96%);
 }
+body {
+    display: flex;
+    font-family: "League Spartan", serif;
+    flex-wrap: wrap;
+}
 
+header {
+    color: var(--VeryDarkMagenta);
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    margin-left: 250px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 15px;
+}
+
+.ratings {
+    color: var(--VeryDarkMagenta);
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 500px;
+}
+
+h2 {
+    margin-top: 14px;
+    background-color: var(--LightGrayishMagenta);
+    border-radius: 8px;
+}
+
+.avis {
+    display: flex;
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.avisa {
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    padding: 20px 20px 20px 20px;
+    margin: 6px 50px 8px 100px;
+    max-width: 350px;
+}
+
+.avisb {
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    padding: 20px 20px 20px 20px;
+    margin: 6px 50px 8px 100px;
+    max-width: 350px;
+}
+
+.avisc {
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    padding: 20px 20px 20px 20px;
+    margin: 6px 50px 8px 100px;
+    max-width: 350px;
+}
+
+h3 img {
+    border-radius: 50%;
+}
+
+span {
+    color: var(--SoftPink);
+}
 /* mobile */
 
-@media screen and(max-width: 375px) {}
+@media screen and(max-width: 375px) {
+}
