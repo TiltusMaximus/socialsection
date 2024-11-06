@@ -12,82 +12,119 @@
     --LightGrayishMagenta: hsl(300, 24%, 96%);
 }
 body {
-    display: flex;
     font-family: "League Spartan", serif;
-    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc {
+    border: 1px solid rgb(47, 78, 255);
+    display: flex;
+    flex-direction: row;
+    margin: 100px 100px 0 100px;
+    justify-content: space-between;
 }
 
 header {
+
+    margin-left: 50px;
+    width: 400px;
     color: var(--VeryDarkMagenta);
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-bottom: 60px;
-    margin-left: 250px;
-    max-width: 400px;
 }
 
 h1 {
     font-size: 50px;
-    margin-bottom: 24px;
     font-weight: 700;
 }
 
 header p {
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 15px;
+    line-height: 18px;
+    padding-right: 40px;
 }
 
 .ratings {
+    border: 1px solid red;
+    width: 520px;
     color: var(--VeryDarkMagenta);
-    margin-top: 150px;
-    margin-left: 300px;
-    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
 }
-
-h2 {
-    margin-top: 14px;
+.ratings .rate {
+    display: flex;
+    width: 400px;
+    padding: 16px;
+    align-items: center;
     background-color: var(--LightGrayishMagenta);
     border-radius: 8px;
 }
 
+.ratings .rate img {
+    margin-left: 8px;
+}
+.ratings .rate h2 {
+    font-size: 15px;
+    margin-left: 22px;
+}
+.rata {
+    align-self: flex-start;
+
+}
+
+.ratb {
+    align-self: center;
+}
+
+.ratc {
+    align-self: flex-end;
+}
+
+
+.reviews {
+    border: thin solid yellow;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 100px 0 150px;
+    justify-content: space-between;
+}
+
 .avis {
     display: flex;
-    width: 350px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    flex-grow: 2;
-    flex-shrink: 1;
-    flex-basis: 100px;
+    flex-direction: column;
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    width: 340px;
+    height: 250px;
+    border-radius: 8px;
+
 }
 
 .avisa {
-    background-color: var(--VeryDarkMagenta);
-    color: var(--White);
-    padding: 20px 20px 20px 20px;
-    margin: 6px 50px 8px 100px;
-    max-width: 350px;
+
 }
 
 .avisb {
-    background-color: var(--VeryDarkMagenta);
-    color: var(--White);
-    padding: 20px 20px 20px 20px;
-    margin: 6px 50px 8px 100px;
-    max-width: 350px;
+
 }
 
 .avisc {
-    background-color: var(--VeryDarkMagenta);
-    color: var(--White);
-    padding: 20px 20px 20px 20px;
-    margin: 6px 50px 8px 100px;
-    max-width: 350px;
+
 }
 
-h3 img {
+.reviews img {
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
-span {
+.reviews span {
     color: var(--SoftPink);
 }
 /* mobile */
