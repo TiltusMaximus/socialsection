@@ -20,27 +20,25 @@ body {
     flex-direction: column;
 }
 
-.bloc {
-    border: 1px solid rgb(47, 78, 255);
+.container .bloc {
     display: flex;
     flex-direction: row;
     margin: 100px 100px 0 100px;
     justify-content: space-between;
 }
 
-header {
-
+.container .bloc header {
     margin-left: 50px;
     width: 400px;
     color: var(--VeryDarkMagenta);
 }
 
-h1 {
+.container .bloc header h1 {
     font-size: 50px;
     font-weight: 700;
 }
 
-header p {
+.container .bloc header p {
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 15px;
@@ -48,8 +46,7 @@ header p {
     padding-right: 40px;
 }
 
-.ratings {
-    border: 1px solid red;
+.container .bloc .ratings {
     width: 520px;
     color: var(--VeryDarkMagenta);
     display: flex;
@@ -57,7 +54,7 @@ header p {
     justify-content: center;
     gap: 16px;
 }
-.ratings .rate {
+.container .bloc .ratings .rate {
     display: flex;
     width: 400px;
     padding: 16px;
@@ -66,65 +63,80 @@ header p {
     border-radius: 8px;
 }
 
-.ratings .rate img {
+.container .bloc .ratings .rate img {
     margin-left: 8px;
 }
-.ratings .rate h2 {
+.container .bloc .ratings .rate h2 {
     font-size: 15px;
     margin-left: 22px;
 }
-.rata {
+.container .bloc .ratings .rata {
     align-self: flex-start;
-
 }
 
-.ratb {
+.container .bloc .ratings .ratb {
     align-self: center;
 }
 
-.ratc {
+.container .bloc .ratings .ratc {
     align-self: flex-end;
 }
 
-
-.reviews {
-    border: thin solid yellow;
+.container .reviews {
     display: flex;
     flex-direction: row;
     margin: 100px 100px 0 150px;
+    height: 260px;
     justify-content: space-between;
 }
 
-.avis {
+.container .reviews .avis {
     display: flex;
     flex-direction: column;
     background-color: var(--VeryDarkMagenta);
     color: var(--White);
-    width: 340px;
-    height: 250px;
+    width: 360px;
+    height: 220px;
     border-radius: 8px;
-
+    padding-top: 40px;
+    padding-left: 32px;
 }
 
-.avisa {
-
+.container .reviews .avisa {
+    align-self: flex-start;
 }
 
-.avisb {
-
+.container .reviews .avisb {
+    align-self: center;
 }
 
-.avisc {
-
+.container .reviews .avisc {
+    align-self: flex-end;
 }
 
-.reviews img {
+.container .reviews .avis .pic {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.container .reviews .avis .pic .name {
+    padding-top: 6px;
+}
+
+.container .reviews .avis p {
+    padding-top: 28px;
+    padding-right: 40px;
+    line-height: 22px;
+}
+
+.container .reviews .avis .pic img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-.reviews span {
+.container .reviews .avis .pic .name span {
     color: var(--SoftPink);
 }
 /* mobile */
